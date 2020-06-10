@@ -60,5 +60,5 @@ resource "google_cloudfunctions_function" "build_notifications_to_slack" {
   environment_variables = {
     SLACK_WEBHOOK_URL = var.slack_webhook_url
   }
-  region = var.cloud_function_location
+  region = var.cloud_function_region
 }
