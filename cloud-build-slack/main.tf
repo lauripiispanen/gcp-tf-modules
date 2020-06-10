@@ -4,7 +4,7 @@ variable "slack_webhook_url" {
 
 variable "source_bucket_location" {
   type = string
-  default = "EU-WEST1"
+  default = "EUROPE-WEST1"
 }
 
 variable "cloud_function_region" {
