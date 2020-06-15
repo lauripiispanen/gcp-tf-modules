@@ -49,6 +49,8 @@ resource "google_cloudfunctions_function" "build_notifications_to_slack" {
   name        = "buildNotificationsToSlack"
   description = "Sends GCB notifications to slack"
   runtime     = "nodejs10"
+  entry_point = "buildNotificationsToSlack"
+  labels = {}
 
   available_memory_mb   = var.cloud_function_memory_mb
   source_archive_bucket = google_storage_bucket.bucket.name
